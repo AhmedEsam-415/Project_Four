@@ -15,9 +15,12 @@
     />
   </head>
   <body>
+    <!--! Start Project Main Page  -->
     <div class="page d-flex">
+      <!--@ Start Sidebar -->
       <div class="sidebar bg-white p-20 p-relative">
         <h3 class="p-relative txt-c mt-0">Elzero</h3>
+        <!--$ Start Links -->
         <ul>
           <li>
             <a
@@ -92,7 +95,11 @@
             </a>
           </li>
         </ul>
+        <!--$ End Links -->
       </div>
+      <!--@ End Sidebar -->
+
+      <!-- @ Start Content -->
       <div class="content w-full">
         <!-- Start Head -->
         <div class="head bg-white p-15 between-flex">
@@ -106,9 +113,49 @@
             <img src="imgs/avatar.png" alt="" />
           </div>
         </div>
-        <!-- End Head -->
         <h1 class="p-relative">Dashboard</h1>
+        <!-- End Head -->
+
+        <!--! Start Wrapper: It Is The Father Element Of All The Boxes Inside It -->
+        <div class="wrapper d-grid gap-20 mr-20 ml-20">
+          <!--@ Start Welcome Box -->
+          <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+            <!-- Start Intro -->
+            <div class="intro p-20 d-flex space-between bg-eee">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <p class="c-grey mt-5">MedOo</p>
+              </div>
+              <img src="imgs/welcome.png" alt="" class="hide-mobile" />
+            </div>
+            <!-- End Intro -->
+            <img src="imgs/avatar.png" alt="" class="avatar" />
+            <!-- Start Body After Intro -->
+            <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+              <div>
+                Osama Elzero
+                <span class="d-block c-grey fs-14 mt-10">Developer</span>
+              </div>
+              <div>
+                80<span class="d-block c-grey fs-14 mt-10">Projects</span>
+              </div>
+              <div>
+                $8500<span class="d-block c-grey fs-14 mt-10">Earned</span>
+              </div>
+            </div>
+            <!-- End Body After Intro -->
+            <a
+              href="profile.html"
+              class="visit d-block fs-14 rad-6 bg-blue c-white w-fit"
+              >Profile</a
+            >
+          </div>
+          <!--@ End Welcome Box -->
+        </div>
+        <!--! Start Wrapper -->
       </div>
+      <!-- @ End Content -->
     </div>
+    <!--! End Project -->
   </body>
 </html>
