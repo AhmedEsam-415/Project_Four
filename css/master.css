@@ -194,7 +194,7 @@ body {
   overflow: hidden;
 }
 .welcome .intro img {
-  width: 170px;
+  width: 200px;
   margin-bottom: -10px;
 }
 .welcome .avatar {
@@ -236,3 +236,19 @@ body {
   }
 }
 /* End Welcome Widget */
+
+/* Start Quick Draft */
+.quick-draft textarea {
+  resize: none;
+  min-height: 180px;
+}
+
+.quick-draft .save {
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
+/* End Quick Draft */
