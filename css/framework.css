@@ -96,6 +96,12 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
 .c-black {
   color: black;
 }
@@ -104,6 +110,15 @@
 }
 .c-white {
   color: white;
+}
+.c-blue {
+  color: blue;
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /* End Color */
 
@@ -122,6 +137,9 @@
 }
 .fs-15 {
   font-size: 15px;
+}
+.fw-bold {
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .txt-c-mobile {
@@ -143,6 +161,12 @@
 /* End Border */
 
 /* Start Components */
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .between-flex {
   display: flex;
   align-items: center;

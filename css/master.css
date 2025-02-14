@@ -252,3 +252,62 @@ body {
   background-color: var(--blue-alt-color);
 }
 /* End Quick Draft */
+
+/* Start Targets */
+.targets .target-row .icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+.targets .target-row .details {
+  flex: 1;
+}
+.targets .target-row .details .progress {
+  height: 4px;
+}
+.targets .target-row .details .progress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.targets .target-row .details .progress > span span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.targets .target-row .details .progress > span span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+
+  border-width: 5px;
+  left: 13px;
+  bottom: -9px;
+}
+.targets .target-row .details .progress > .blue span::after {
+  border-top-color: var(--blue-color);
+}
+.targets .target-row .details .progress > .orange span::after {
+  border-top-color: var(--orange-color);
+}
+.targets .target-row .details .progress > .green span::after {
+  border-top-color: var(--green-color);
+}
+.blue .icon,
+.blue .progress {
+  background-color: rgb(0 117 225 / 20%);
+}
+.orange .icon,
+.orange .progress {
+  background-color: rgb(245 158 11 / 20%);
+}
+.green .icon,
+.green .progress {
+  background-color: rgb(34 197 94 / 20%);
+}
+/* End Targets */
