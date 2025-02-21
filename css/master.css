@@ -284,7 +284,6 @@ body {
   content: "";
   position: absolute;
   border-style: solid;
-
   border-width: 5px;
   left: 13px;
   bottom: -9px;
@@ -311,3 +310,68 @@ body {
   background-color: rgb(34 197 94 / 20%);
 }
 /* End Targets */
+
+/* Start tickets */
+.tickets .box {
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .tickets .box {
+    width: 100%;
+  }
+}
+/* End tickets */
+
+/* Start latest-news */
+.latest-news .new-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.latest-news .new-row img {
+  width: 100px;
+  margin-right: 15px;
+}
+.latest-news .new-row .info {
+  flex-grow: 1;
+}
+.latest-news .new-row .info h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .latest-news .new-row {
+    display: block;
+  }
+  .latest-news .new-row .lable {
+    width: fit-content;
+    margin: 15px auto 5px;
+  }
+}
+/* End latest-news */
+
+/* Start tesks */
+.tasks .task-row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.tasks .task-row .info {
+  flex-grow: 1;
+}
+.tasks .done {
+  opacity: 0.3;
+}
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+.tasks .task-row .delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tasks .task-row .delete:hover {
+  color: var(--red-color);
+}
+/* End tesks */
