@@ -547,6 +547,208 @@ body {
 }
 /* End Projects Table */
 
+/* Start Settings */
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.settings-page .close-message {
+  border: 1px solid #ccc;
+  min-height: 160px;
+  resize: none;
+}
+.settings-page .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
+
+.settings-page .sec-box {
+  padding-bottom: 15px;
+}
+.settings-page .sec-box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.settings-page .social-boxs i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+}
+.settings-page .social-boxs input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxs > div:focus-within i {
+  color: black;
+}
+.widgets-control .control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.widgets-control .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+  margin-top: -9px;
+  border-radius: 4px;
+}
+.widgets-control .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+.widgets-control .control label::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.widgets-control .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+
+.bakup-control input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.bakup-control .date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.bakup-control .date label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  border-radius: 50%;
+}
+.bakup-control .date label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s;
+}
+.bakup-control .date input[type="radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+.bakup-control .date input[type="radio"]:checked + label::after {
+  transform: scale(1);
+}
+
+.bakup-control .servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .bakup-control .servers {
+    flex-wrap: wrap;
+  }
+}
+.bakup-control .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+}
+.bakup-control .servers .server label {
+  cursor: pointer;
+}
+.bakup-control .servers input[type="radio"]:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.toggol-switch {
+  position: relative;
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggol-switch::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00d";
+  font-weight: bold;
+  position: absolute;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggol-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggol-switch::before {
+  content: "\f00c";
+  /* left: calc(100% - 28px); */
+  left: 50px;
+  color: var(--blue-color);
+}
+/* End Settings */
+
 /* Start Animations */
 @keyframes change-color {
   0% {
