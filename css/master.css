@@ -749,6 +749,66 @@ body {
 }
 /* End Settings */
 
+/* Start Profil */
+@media (max-width: 768px) {
+  .profil-page .overview {
+    flex-direction: column;
+  }
+}
+.profil-page .avatar-box {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .profil-page .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+.profil-page .avatar-box > img {
+  width: 120px;
+  height: 120px;
+}
+.profil-page .avatar-box .level {
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+.profil-page .avatar-box .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+  background-color: var(--blue-color);
+}
+.profil-page .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+.profil-page .info-box .box:hover {
+  background-color: #f9f9f9;
+}
+.profil-page .info-box .box > div {
+  min-width: 230px;
+  padding: 10px 0 0;
+}
+.profil-page .info-box .box h4 {
+  font-weight: normal;
+}
+.profil-page .info-box .toggol-switch {
+  height: 20px;
+}
+.profil-page .info-box .toggle-checkbox:checked + .toggol-switch::before {
+  left: 62px;
+}
+.profil-page .info-box .toggol-switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+/* End Profil */
+
 /* Start Animations */
 @keyframes change-color {
   0% {
