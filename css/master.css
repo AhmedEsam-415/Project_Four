@@ -799,6 +799,11 @@ body {
 .profil-page .info-box .toggol-switch {
   height: 20px;
 }
+@media (max-width: 768px) {
+  .profil-page .info-box .toggol-switch {
+    margin: auto;
+  }
+}
 .profil-page .info-box .toggle-checkbox:checked + .toggol-switch::before {
   left: 62px;
 }
@@ -806,6 +811,63 @@ body {
   width: 12px;
   height: 12px;
   font-size: 8px;
+}
+@media (max-width: 768px) {
+  .profil-page .other-data {
+    flex-direction: column;
+  }
+}
+.profil-page .other-data .skills-card {
+  flex-grow: 1;
+}
+.profil-page .other-data .skills-card ul li {
+  padding: 15px 0;
+}
+.profil-page .other-data .skills-card ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.profil-page .other-data .skills-card ul li span {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.profil-page .other-data .skills-card ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+.profil-page .activities {
+  flex-grow: 2;
+}
+.profil-page .activities .activty:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.profil-page .activities .activty img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .profil-page .activities .activty .date {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+@media (max-width: 768px) {
+  .profil-page .activities .activty {
+    flex-direction: column;
+  }
+  .profil-page .activities .activty img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .profil-page .activities .activty .date {
+    margin-top: 15px;
+  }
 }
 /* End Profil */
 
