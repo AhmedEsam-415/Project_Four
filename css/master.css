@@ -871,6 +871,103 @@ body {
 }
 /* End Profil */
 
+/* Start Project Page */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin: 0 10px;
+    gap: 10px;
+  }
+}
+.projects-page .project > span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.projects-page .project h4 {
+  font-weight: normal;
+}
+@media (max-width: 768px) {
+  .projects-page .project h4 {
+    text-align: center;
+  }
+  .projects-page .project p {
+    text-align: center;
+  }
+}
+.projects-page .project .team {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .projects-page .project .team {
+    justify-content: center;
+  }
+}
+.projects-page .project .team a:not(:first-of-type) {
+  margin-left: -15px;
+  transition: 0.3s;
+}
+.projects-page .project .team a:hover {
+  z-index: 2;
+}
+.projects-page .project .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects-page .project .do {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.projects-page .project .do span {
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .projects-page .project .do {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-page .project .do span:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.projects-page .project .info {
+  margin: 20px 0 10px 0;
+}
+.projects-page .project .info .prog {
+  position: relative;
+  height: 8px;
+  width: 260px;
+  border-radius: 6px;
+}
+.projects-page .project .info .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+@media (max-width: 767px) {
+  .projects-page .project .info {
+    flex-direction: column;
+  }
+  .projects-page .project .info .prog {
+    margin-bottom: 15px;
+  }
+}
+/* End Project Page */
+
 /* Start Animations */
 @keyframes change-color {
   0% {
